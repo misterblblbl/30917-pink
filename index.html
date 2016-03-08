@@ -1,12 +1,247 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+	<meta charset="UTF-8">
+	<title>Pink</title>
+</head>
+<body>
+	<header class="page-header">
+		<div class="page-header__logo">
+			<img src="http://placehold.it/77x24" alt="PINK" width="77" height="24">
+		</div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+		<nav class="main-nav">
+			<span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
 
-  </body>
+			<div class="main-nav__wrapper main-nav__wrapper--closed">
+				<ul class="main-nav__items">
+					<li class="main-nav__item">
+						<a href="#intro">Информация</a>
+					</li>
+					<li class="main-nav__item">
+						<a href="#features">Возможности</a>
+					</li>
+					<li class="main-nav__item">
+						<a href="#reviews">Отзывы</a>
+					</li>
+					<li class="main-nav__item">
+						<a href="#pricing">Стоимость</a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+	</header>
+
+	<main class="page-content">
+		<section class="intro" id="intro">
+			<div class="intro__wrapper">
+
+				<header class="intro__header">
+					<b class="intro__slogan">Взгляните на жизнь<br>иначе!</b>
+					<div class="intro__illustration">
+						<img src="http://placehold.it/256x286" alt="" width="256" height="286">
+					</div>
+				</header>
+
+				<div class="download">
+					<a href="#" class="btn btn-download">Скачать приложение</a>
+
+					<div class="download-links">
+						<a href="#" class="download-links__platform download-links__platform--appple">AppStore</a>
+						<a href="#" class="download-links__platform download-links__platform--android">Play Market</a>
+						<a href="#" class="download-links__platform download-links__platform--windows">Windows</a>
+					</div>
+
+					<p class="download-description">
+						Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="features" id="features">
+			<div class="features__wrapper">
+				<div class="features-slogan">
+					<p>Устали от серости мегаполиса?</p>
+					<p>Нам есть, что вам предложить!</p>
+				</div>
+
+				<div class="features__items">
+					<div class="features__item">
+						<b class="features__name">Поднимает настроение</b>
+						<p class="features__description">Приложение позволит вам победить осеннюю хандру 
+							и деперессию буквально в несколько кликов!</p>
+					</div>
+
+					<div class="features__item">
+						<b class="features__name">Меняет мир вокруг</b>
+						<p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+					</div>
+
+					<div class="features__item">
+						<b class="features__name">Заводит новых друзей</b>
+						<p class="features__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+					</div>
+				</div>
+
+				
+				<div class="features__illustration">
+					<img src="http://placehold.it/160x280" alt="" width="160" height="280">
+				</div>
+			</div>
+		</section>
+
+		<section class="reviews" id="reviews">
+			<div class="reviews__wrapper">
+				<input type="radio" id="review-toggle-1" name="review-toggle" checked>
+				<input type="radio" id="review-toggle-2" name="review-toggle">
+				<input type="radio" id="review-toggle-3" name="review-toggle">
+
+				<div class="review__controls">
+					<label for="review-toggle-1"></label>
+					<label for="review-toggle-2"></label>
+					<label for="review-toggle-3"></label>
+				</div>
+
+				<div class="review__item">
+					<b class="review__name">Николай Петров</b>
+					<p class="review__text">
+						«Это приложение перевернуло мой мир и позволило по-новому 
+						взглянуть на привычные серые вещи! А еще я познакомился 
+						со своей будущей женой в комментариях к выложенной фотографии!»
+					</p>
+				</div>
+
+				<div class="review__item">
+					<b class="review__name">Николай Петров</b>
+					<p class="review__text">
+						«Это приложение перевернуло мой мир и позволило по-новому 
+						взглянуть на привычные серые вещи! А еще я познакомился 
+						со своей будущей женой в комментариях к выложенной фотографии!»
+					</p>
+				</div>
+
+				<div class="review__item">
+					<b class="review__name">Николай Петров</b>
+					<p class="review__text">
+						«Это приложение перевернуло мой мир и позволило по-новому 
+						взглянуть на привычные серые вещи! А еще я познакомился 
+						со своей будущей женой в комментариях к выложенной фотографии!»
+					</p>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="pricing" id="pricing">
+			<div class="pricing__wrapper">
+				<input type="radio" id="pricing-toggle-1" name="pricing-toggle">
+				<input type="radio" id="pricing-toggle-2" name="pricing-toggle" checked>
+				<input type="radio" id="pricing-toggle-3" name="pricing-toggle">
+
+				<div class="pricing__controls">
+					<label for="pricing-toggle-1"></label>
+					<label for="pricing-toggle-2"></label>
+					<label for="pricing-toggle-3"></label>
+				</div>
+
+				<div class="pricing-slide">
+					<table class="pricing-table">
+						<tr>
+							<th colspan="2">
+								<b class="pricing-table__tarif">База</b>
+								<span>1,99 USD</span>
+							</th>
+						</tr>
+						<tr>
+							<td class="pricing-table__feature">Розовый фильтр</td>
+							<td class="pricing-table__check pricing-table__check--yes">да</td>
+						</tr>
+						<tr>
+							<td class="pricing-table__feature">Смайлики</td>
+							<td class="pricing-table__check pricing-table__check--yes">нет</td>
+						</tr>
+						<tr>
+							<td class="pricing-table__feature">Комментарии</td>
+							<td class="pricing-table__check pricing-table__check--no">нет</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="pricing-slide">
+					<table class="pricing-table">
+						<tr>
+							<th colspan="2">
+								<b class="pricing-table__tarif">Стандарт</b>
+								<span>3,99 USD</span>
+							</th>
+						</tr>
+						<tr>
+							<td class="pricing-table__feature">Розовый фильтр</td>
+							<td class="pricing-table__check pricing-table__check--yes">да</td>
+						</tr>
+						<tr>
+							<td class="pricing-table__feature">Смайлики</td>
+							<td class="pricing-table__check pricing-table__check--yes">да</td>
+						</tr>
+						<tr>
+							<td class="pricing-table__feature">Комментарии</td>
+							<td class="pricing-table__check pricing-table__check--no">нет</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="pricing-slide">
+					<table class="pricing-table">
+						<tr>
+							<th colspan="2">
+								<b class="pricing-table__tarif">Анлим</b>
+								<span>9,99 USD</span>
+							</th>
+						</tr>
+						<tr>
+							<td class="pricing-table__feature">Розовый фильтр</td>
+							<td class="pricing-table__check pricing-table__check--yes">да</td>
+						</tr>
+						<tr>
+							<td class="pricing-table__feature">Смайлики</td>
+							<td class="pricing-table__check pricing-table__check--yes">да</td>
+						</tr>
+						<tr>
+							<td class="pricing-table__feature">Комментарии</td>
+							<td class="pricing-table__check pricing-table__check--no">нет</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__contacts">
+				<p class="сontacts__heading">
+				Остались вопросы?<br>
+				Свяжитесь с нами!</p>
+
+				<span class="contacts__title">Звоните:</span>
+				<a href="tel:+78125556666">
+				<span class="contacts__value">+7 (812) 555-66-66</span>
+				</a>
+
+				<span class="contacts__title">Пишите:</span>
+				<span class="contacts__value">mail@htmlacademy.ru</span>
+
+				<span class="contacts__title">Приезжайте в гости:</span>
+				<span class="contacts__value">ул. Большая
+				Конюшенная, 19/8</span>
+
+			</div>
+
+			<div class="footer-map"></div>
+		</div>
+	</footer>
+	
+</body>
 </html>
