@@ -49,7 +49,7 @@
 				</p>
 
 				<form name="contest-form" action="/echo" method="get">
-					<fieldset class="form-name">
+					<fieldset class="contest-form__name">
 						<label class="contest-form__label" for="name-field">Имя</label>
 						<input class="contest-form__input-field" type="text" id="name-field" name="name" placeholder="Введите ваше имя">
 
@@ -60,7 +60,7 @@
 						<input class="contest-form__input-field" type="text" id="patronymic-field" name="surname" placeholder="Ну, и отчество тоже">
 					</fieldset>
 
-					<fieldset class="form-achievements">
+					<fieldset class="contest-form__achievements">
 						<legend class="contest-form__heading">Ваши безбашенные
 						достижения в путешествии</legend>
 						<input class="contest-form__check" type="checkbox" id="achievement-selfie" name="achievement-selfie" checked>
@@ -83,7 +83,7 @@
 					</fieldset>
 
 
-					<fieldset class="form-contacts">
+					<fieldset class="contest-form__contacts">
 						<label class="contest-form__label" for="tel-field">Номерок телефончика</label>
 						<input class="contest-form__input-field" type="tel" id="tel-field" name="tel" placeholder="Номер, пожалуйста">
 
@@ -91,7 +91,7 @@
 						<input class="contest-form__input-field" type="email" id="email-field" name="email" placeholder="E-mail, пожалуйста">
 					</fieldset>
 
-					<fieldset class="form-app">
+					<fieldset class="contest-form__app">
 						<legend class="contest-form__heading">С каким приложением путешествовали?</legend>
 
 						<input class="contest-form__radio" type="radio" id="ios" name="ios" checked>
@@ -104,13 +104,13 @@
 			            <label class="contest-form__check-label" for="windows">Windows Phone</label>
 					</fieldset>
 
-					<fieldset class="form-feedback">
+					<fieldset class="contest-form__feedback">
 						<legend class="contest-form__heading">Опишите свои эмоции</legend>
 						<textarea rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
 					</fieldset>
 
 					<input class="contest-form__submit" type="submit" value="Отправить форму">
-					<span class="contest-form__star">*</span><span> — обязательные поля</span>
+					<span class="contest-form__note"><b class="contest-form__star">*</b> — обязательные поля</span>
 				</form>
 			</div>
 		</section>
