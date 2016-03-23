@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
@@ -20,7 +21,7 @@
           <a href="photo.html" class="main-nav__link">Фотографии</a>
         </li>
         <li class="main-nav__item main-nav__item--active">
-          <a>Конкурс</a>
+          <a class="main-nav__link">Конкурс</a>
         </li>
         <li class="main-nav__item">
           <a href="http://htmlacademy.ru" class="main-nav__link">HTML Academy</a>
@@ -42,7 +43,7 @@
         Пожалуйста, заполните форму ниже:
       </p>
 
-      <fieldset class="contest-form contest-form--name-field">
+      <fieldset class="contest-form__field contest-form__field--name">
         <p class="contest-form__element">
           <label class="contest-form__label">Имя
             <input class="contest-form__input-field" type="text" name="name" placeholder="Введите ваше имя">
@@ -62,7 +63,7 @@
         </p>
       </fieldset>
 
-      <fieldset class="contest-form contest-form--achievements-field">
+      <fieldset class="contest-form__field contest-form__field--achievements">
         <legend class="contest-form__heading">
           Ваши безбашенные достижения в путешествии
         </legend>
@@ -111,7 +112,7 @@
       </fieldset>
 
 
-      <fieldset class="contest-form contest-form--contacts-field">
+      <fieldset class="contest-form__field contest-form__field--contacts">
         <p class="contest-form__element">
           <label class="contest-form__label">Номерок телефончика
             <input class="contest-form__input-field" type="tel" name="tel" placeholder="Номер, пожалуйста">
@@ -125,7 +126,7 @@
         </p>
       </fieldset>
 
-      <fieldset class="contest-form contest-form--app">
+      <fieldset class="contest-form__field contest-form__field--app">
         <legend class="contest-form__heading">С каким приложением путешествовали?</legend>
 
         <p class="contest-form__element">
@@ -151,7 +152,7 @@
 
       </fieldset>
 
-      <fieldset class="contest-form contest-form--feedback-field">
+      <fieldset class="contest-form__field contest-form__field--feedback">
         <legend class="contest-form__heading">Опишите свои эмоции</legend>
         <textarea rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
@@ -166,13 +167,17 @@
   <footer class="page-footer">
     <img class="page-footer__logo" src="http://placehold.it/150x40" alt="Pink" width="150" height="40">
 
-    <div class="page-footer__social">
-      <ul class="social-links">
-        <li><a href="#" class="page-footer__link page-footer__link--tw">Twiter</a></li>
-        <li><a href="#" class="page-footer__link page-footer__link--fb">Facebook</a></li>
-        <li><a href="#" class="page-footer__link page-footer__link--yt">Youtube</a></li>
-      </ul>
-    </div>
+    <ul class="social-links">
+      <li class="social-links__item">
+        <a href="#" class="social-links__link social-links__link--tw">Twiter</a>
+      </li>
+      <li class="social-links__item">
+        <a href="#" class="social-links__link social-links__link--fb">Facebook</a>
+      </li>
+      <li class="social-links__item">
+        <a href="#" class="social-links__link social-links__link--yt">Youtube</a>
+      </li>
+    </ul>
 
     <div class="page-footer__copyright">
       <span>Разработано</span>
