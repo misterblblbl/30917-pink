@@ -1,3 +1,11 @@
 .download-info {
   outline: 1px dashed red;
+
+  &__btn {
+    display: block;
+    padding: 25px 55px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+  }
 }

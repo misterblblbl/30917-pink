@@ -1,3 +1,43 @@
 .page-footer {
   outline: 2px dotted green;
+  height: 612px;
+
+  &__wrapper {
+    @include container;
+  }
+  &__links {
+    @include clearfix;
+    display: none;
+    @media ($tablet-width) {
+      display: block;
+      height: 126px;
+    }
+    @media ($desktop-width) {
+      display: block;
+      height: 190px;
+    }
+  }
+
+  &__logo {
+    float: left;
+    @media ($tablet-width) {
+      width: 145px;
+      margin-right: 73px;
+    }
+    @media ($desktop-width) {
+      width: 149px;
+      margin-right: 230px;
+    }
+  }
+
+  &__copyright {
+    outline: 2px dotted green;
+    float: right;
+    @media ($tablet-width) {
+      width: 125px;
+    }
+    @media ($desktop-width) {
+      width: 150px;
+    }
+  }
 }

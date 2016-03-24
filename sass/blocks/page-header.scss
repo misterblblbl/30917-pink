@@ -1,3 +1,32 @@
 .page-header {
-  outline: 2px dotted green;
+  outline: 2px solid green;
+  height: 66px;
+  @include clearfix;
+
+  @media ($tablet-width) {
+    height: 110px;
+  }
+
+  @media ($desktop-width) {
+    height: 110px;
+  }
+
+  &__wrapper {
+    @include container;
+  }
+
+  &__logo {
+    outline: 2px dotted green;
+    float: left;
+    width: 80px;
+    height: 25px;
+    @media ($tablet-width) {
+      width: 150px;
+      height: 42px;
+    }
+    @media ($desktop-width) {
+      width: 148px;
+      height: 42px;
+    }
+  }
 }

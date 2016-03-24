@@ -1,3 +1,10 @@
 .pricing {
-  outline: 1px dashed red;
+  outline: 2px dashed blue;
+  min-height: 446px;
+  @media ($tablet-width) {
+    min-height: 320px;
+  }
+  @media ($desktop-width) {
+    min-height: 440px;
+  }
 }

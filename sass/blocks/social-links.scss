@@ -1,3 +1,6 @@
 .social-links {
   outline: 1px dashed red;
+  @include no-list
+  width: 175px;
+  float: left;
 }
