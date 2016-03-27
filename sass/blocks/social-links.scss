@@ -1,6 +1,13 @@
 .social-links {
   outline: 1px dashed red;
-  @include no-list
+  @include no-list;
+  margin: 0 auto;
   width: 175px;
-  float: left;
+  margin-bottom: 35px;
+  @media ($tablet-width) {
+    float: left;
+  }
+  @media ($desktop-width) {
+    float: left;
+  }
 }

@@ -1,13 +1,23 @@
 .page-footer {
   outline: 2px dotted green;
-  height: 612px;
+  padding-top: 37px;
+  @media ($tablet-width) {
+    padding-top: 35px;
+  }
+  @media ($desktop-width) {
+    padding-top: 65px;
+  }
 
   &__wrapper {
     @include container;
   }
   &__links {
     @include clearfix;
-    display: none;
+    margin: 0 auto;
+    text-align: center;
+    &--main {
+      display: none;
+    }
     @media ($tablet-width) {
       display: block;
       height: 126px;
@@ -19,8 +29,11 @@
   }
 
   &__logo {
-    float: left;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    text-align: center;
     @media ($tablet-width) {
+      float: left;
       width: 145px;
       margin-right: 73px;
     }
@@ -32,12 +45,17 @@
 
   &__copyright {
     outline: 2px dotted green;
-    float: right;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 90px;
+
     @media ($tablet-width) {
       width: 125px;
+      float: right;
     }
     @media ($desktop-width) {
       width: 150px;
+      float: right;
     }
   }
 }
