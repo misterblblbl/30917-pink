@@ -2,11 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pink</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <h1 class="page-header__logo">Pink</h1>
@@ -121,52 +122,48 @@
         </div>
 
         <div class="pricing__slider">
-          <table class="pricing-table">
+          <table class="pricing-table" border="1">
             <thead>
               <tr>
-                <th class="pricing-table__tariff-name" colspan="2">База</th>
-                <th class="pricing-table__tariff-name" colspan="2">Стандарт</th>
-                <th class="pricing-table__tariff-name" colspan="2">Анлим</th>
+                <th class="pricing-table__header pricing-table__header--empty"></th>
+                <th class="pricing-table__header pricing-table__header--tariff">База</th>
+                <th class="pricing-table__header pricing-table__header--tariff">Стандарт</th>
+                <th class="pricing-table__header pricing-table__header--tariff">Анлим</th>
               </tr>
               <tr>
-                <th class="pricing-table__price" colspan="2">1,99 USD</th>
-                <th class="pricing-table__price" colspan="2">3,99 USD</th>
-                <th class="pricing-table__price" colspan="2">9,99 USD</th>
+                <th class="pricing-table__header pricing-table__header--empty"></th>
+                <th class="pricing-table__header pricing-table__header--price">1,99 USD</th>
+                <th class="pricing-table__header pricing-table__header--price">3,99 USD</th>
+                <th class="pricing-table__header pricing-table__header--price">9,99 USD</th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
-                <td class="pricing-table__feature">Розовый фильтр</td>
-                <td class="pricing-table__check pricing-table__check--yes">да</td>
+                <td class="pricing-table__cell pricing-table__cell--feature">Розовый фильтр</td>
+                <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--filter" data-header="Розовый фильтр">да</td>
 
-                <td class="pricing-table__feature">Розовый фильтр</td>
-                <td class="pricing-table__check pricing-table__check--yes">да</td>
+                <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--smiles">да</td>
 
-                <td class="pricing-table__feature">Розовый фильтр</td>
-                <td class="pricing-table__check pricing-table__check--yes">да</td>
+                <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--comments">да</td>
               </tr>
 
               <tr>
-                <td class="pricing-table__feature">Смайлики</td>
-                <td class="pricing-table__check pricing-table__check--yes">нет</td>
+                <td class="pricing-table__cell pricing-table__cell--feature">Смайлики</td>
+                <td class="pricing-table__cell pricing-table__cell--no pricing-table__cell--filter" data-header="Смайлики">нет</td>
 
-                <td class="pricing-table__feature">Смайлики</td>
-                <td class="pricing-table__check pricing-table__check--yes">да</td>
+                <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--smiles">да</td>
 
-                <td class="pricing-table__feature">Смайлики</td>
-                <td class="pricing-table__check pricing-table__check--yes">да</td>
+                <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--comments">да</td>
               </tr>
 
               <tr>
-                <td class="pricing-table__feature">Комментарии</td>
-                <td class="pricing-table__check pricing-table__check--no">нет</td>
+                <td class="pricing-table__cell pricing-table__cell--feature">Комментарии</td>
+                <td class="pricing-table__cell pricing-table__cell--no pricing-table__cell--filter" data-header="Комментарии">нет</td>
 
-                <td class="pricing-table__feature">Комментарии</td>
-                <td class="pricing-table__check pricing-table__check--no">нет</td>
+                <td class="pricing-table__cell pricing-table__cell--no pricing-table__cell--smiles">нет</td>
 
-                <td class="pricing-table__feature">Комментарии</td>
-                <td class="pricing-table__check pricing-table__check--no">да</td>
+                <td class="pricing-table__cell pricing-table__cell--no pricing-table__cell--comments">да</td>
               </tr>
             </tbody>
           </table>

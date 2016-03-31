@@ -53,6 +53,7 @@
   &__item {
     outline: 1px dotted blue;
     margin-bottom: 45px;
+
     @media ($desktop-width) {
       display: table-cell;
       padding-top: 360px;
@@ -62,9 +63,11 @@
   &__item--last {
     outline: 1px dashed blue;
     margin-bottom: 320px;
+
     @media ($tablet-width) {
       margin-bottom: 0;
     }
+
     @media ($desktop-width) {
       margin-bottom: 0;
     }
@@ -72,11 +75,13 @@
 
   &__effect {
     display: none;
+
     @media ($tablet-width) {
       display: block;
       height: 400px;
       padding-left: 310px;
     }
+
     @media ($desktop-width) {
       display: block;
       height: 480px;

@@ -3,26 +3,34 @@
   @include clearfix;
   min-height: 760px;
   padding-top: 20px;
+
   @media ($tablet-width) {
     min-height: 510px;
   }
+
   @media ($desktop-width) {
     min-height: 510px;
   }
+
   &__image {
     display: block;
+
     @media ($tablet-width) {
       float: left;
     }
+
     @media ($desktop-width) {
       float: left;
     }
   }
+
   &__tools {
     display: block;
+
     @media ($tablet-width) {
       float: right;
     }
+
     @media ($desktop-width) {
       float: right;
     }

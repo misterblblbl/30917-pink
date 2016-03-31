@@ -20,10 +20,12 @@
     float: left;
     width: 80px;
     height: 25px;
+
     @media ($tablet-width) {
       width: 150px;
       height: 42px;
     }
+
     @media ($desktop-width) {
       width: 148px;
       height: 42px;

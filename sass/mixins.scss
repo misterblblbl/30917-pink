@@ -11,14 +11,15 @@
   width: 280px;
   margin: 0 auto;
 
-    @media ($tablet-width) {
+  @media ($tablet-width) {
       width: 620px;
   }
 
-    @media ($desktop-width) {
+  @media ($desktop-width) {
       width: 940px;
   }
 }
+
 @mixin no-list {
   list-style: none;
   padding: 0;

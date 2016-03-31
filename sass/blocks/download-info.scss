@@ -4,6 +4,7 @@
   @media ($tablet-width) {
     width: 300px;
   }
+
   @media ($desktop-width) {
     width: 300px;
   }
@@ -23,6 +24,7 @@
   &__heading {
     display: none;
     margin: 0;
+
     @media ($tablet-width) {
       display: block;
       padding-top: 105px;
@@ -30,6 +32,7 @@
       line-height: 48px;
       text-align: center;
     }
+
     @media ($desktop-width) {
       display: block;
       padding-top: 125px;

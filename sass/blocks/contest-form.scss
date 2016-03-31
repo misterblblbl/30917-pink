@@ -5,6 +5,7 @@
   @media ($tablet-width) {
     padding-top: 100px;
   }
+
   @media ($desktop-width) {
     padding-top: 100px;
   }
@@ -14,16 +15,15 @@
     font-size: 14px;
     line-height: 30px;
     text-align: center;
+
     @media ($tablet-width) {
       padding-bottom: 80px;
       font-size: 18px;
-      line-height: 30px;
     }
 
     @media ($desktop-width) {
       padding-bottom: 85px;
       font-size: 18px;
-      line-height: 30px;
     }
   }
 
@@ -31,33 +31,43 @@
     padding: 0;
     outline: 2px dotted deeppink;
     display: block;
+
     @media ($tablet-width) {
       padding: 52px 60px;
     }
+
     @media ($desktop-width) {
 
     }
+
     &--name {
       padding-bottom: 40px;
+
       @media ($desktop-width) {
         width: 434px;
       }
     }
+
     &--achievements {
       padding-bottom: 45px;
     }
+
     &--contacts {
       padding-bottom: 50px;
+
       @media ($desktop-width) {
         @include clearfix;
       }
     }
+
     &--app {
       padding-bottom: 40px;
+
       @media ($desktop-width) {
         width: 432px;
       }
     }
+
     &--feedback {
       padding-bottom: 45px;
     }
@@ -67,30 +77,48 @@
       @include clearfix;
     }
   }
+
   &__submit {
     outline: 2px solid forestgreen;
     display: block;
     padding: 25px 47px;
+
     @media ($tablet-width) {
       float: left;
     }
   }
+
   &__note {
     display: block;
+
     @media ($tablet-width) {
       float: right;
     }
   }
+
   &__element--phone {
     @media ($desktop-width) {
       width: 373px;
       float: left;
     }
   }
+
   &__element--address {
     @media ($desktop-width) {
       width: 373px;
       float: right;
+    }
+  }
+
+  &__legend {
+    display: none;
+
+    @media ($tablet-width) {
+      display: block;
+    }
+
+    @media ($desktop-width) {
+      display: block;
     }
   }
 }

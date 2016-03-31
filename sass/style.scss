@@ -10,6 +10,7 @@
 @import 'blocks/features';
 @import 'blocks/reviews';
 @import 'blocks/pricing';
+@import 'blocks/pricing-table';
 @import 'blocks/footer-map';
 @import 'blocks/social-links';
 @import 'blocks/contest-form';
@@ -45,18 +46,5 @@
 
   src: url('../fonts/opensansbold.woff') format('woff'),
   url('../fonts/opensansbold.woff2') format('woff2');
-}
-
-body {
-  margin: 0;
-  padding: 0;
-
-  font-size: 14px;
-  line-height: 24px;
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  color: $body-font;
-  font-style: normal;
-
-  background-color: #FFFFFF;
 }
 

@@ -1,0 +1,87 @@
+.pricing-table {
+
+  &__header {
+    min-width: 280px;
+
+    @media ($tablet-width) {
+      min-width: 154px;
+    }
+
+    @media ($desktop-width) {
+      min-width: 234px;
+    }
+
+    &--empty {
+      display: none;
+
+      @media ($tablet-width) {
+        display: table-cell;
+        border: none;
+      }
+
+      @media ($desktop-width) {
+        display: table-cell;
+        border: none;
+      }
+    }
+  }
+
+  &__cell {
+    min-width: 280px;
+
+    @media ($tablet-width) {
+      min-width: 154px;
+    }
+
+    @media ($desktop-width) {
+      min-width: 234px;
+    }
+
+    &--feature {
+      display: none;
+
+      @media ($tablet-width) {
+        display: table-cell;
+      }
+
+      @media ($desktop-width) {
+        display: table-cell;
+      }
+    }
+
+    &--yes {
+      text-align: right;
+
+      @media ($tablet-width) {
+        text-align: center;
+      }
+    }
+
+    &--no {
+      text-align: right;
+
+      @media ($tablet-width) {
+        text-align: center;
+      }
+    }
+
+    &--filter {
+      position: relative;
+    }
+
+    &--filter::before {
+      @media ($mobile-width-only) {
+        content: attr(data-header);
+        position: absolute;
+        left: 15px;
+        top: 2px;
+        width: 135px;
+        height: 20px;
+        font-size: 14px;
+        color: black;
+        outline: 1px solid darkred;
+      }
+    }
+  }
+}
+

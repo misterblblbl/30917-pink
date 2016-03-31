@@ -4,13 +4,35 @@
 
   &__items {
     @include no-list;
+
+    @media ($desktop-width) {
+      margin-top: 45px;
+    }
   }
 
   &__item {
     display: none;
-    padding-right: 20px;
-    font-size: 18px;
-    line-height: 32px;
-    text-transform: uppercase;
+
+    @media ($desktop-width) {
+      outline: 1px solid red;
+      display: inline-block;
+      vertical-align: bottom;
+      margin-right: 80px;
+      font-size: 18px;
+      line-height: 32px;
+      text-transform: uppercase;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__toggle {
+    display: block;
+
+    @media ($desktop-width) {
+      display: none;
+    }
   }
 }
