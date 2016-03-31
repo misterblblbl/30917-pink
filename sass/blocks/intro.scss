@@ -1,8 +1,13 @@
 .intro {
   outline: 3px dotted purple;
   position: relative;
+  z-index: 0;
   top: -66px;
   padding-top: 66px;
+  background-color: $body-font;
+  background-image: url(../../img/iphone-hand-mobile.png), url(../../img/bg-back-mobile.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 27%, center top;
 
   @media ($tablet-width) {
     top: -110px;
@@ -14,11 +19,15 @@
     padding-top: 110px;
   }
 
+  &__wrapper {
+    @include container;
+  }
+
   &--main {
     min-height: 458px;
     position: relative;
     top: -66px;
-    padding-top: 456px
+    padding-top: 456px;
 
     @media ($tablet-width) {
       min-height: 614px;

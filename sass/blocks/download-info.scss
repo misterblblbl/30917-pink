@@ -1,5 +1,6 @@
 .download-info {
   outline: 1px dashed red;
+  color: #FFFFFF;
 
   @media ($tablet-width) {
     width: 300px;
@@ -11,14 +12,32 @@
 
   &__btn {
     display: block;
-    padding: 25px 55px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 18px 36px;
+    color: #FFFFFF;
+    text-decoration: none;
     font-size: 18px;
     line-height: 18px;
     text-align: center;
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
   }
 
   &__links {
     @include no-list;
+  }
+  &__icons {
+    display: inline-block;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-right: 30px;
+    width: 55px;
+    height: 55px;
+    font-size: 0;
+    outline: 1px solid yellow;
   }
 
   &__heading {

@@ -9,4 +9,8 @@
   @media ($desktop-width) {
     min-height: 440px;
   }
+
+  &__wrapper {
+    @include container;
+  }
 }

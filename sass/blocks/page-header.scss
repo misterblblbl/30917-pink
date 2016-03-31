@@ -1,14 +1,19 @@
 .page-header {
-  outline: 2px solid green;
-  height: 66px;
   @include clearfix;
+  outline: 2px solid green;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
 
   @media ($tablet-width) {
-    height: 110px;
+    padding-top: 27px;
+    padding-bottom: 42px;
   }
 
   @media ($desktop-width) {
-    height: 110px;
+
   }
 
   &__wrapper {
@@ -20,15 +25,19 @@
     float: left;
     width: 80px;
     height: 25px;
+    font-size: 0;
+    background: url(../../img/logo-pink-white-mobile.svg) no-repeat;
 
     @media ($tablet-width) {
       width: 150px;
       height: 42px;
+      background: url(../../img/logo-pink-blue-mobile.svg) no-repeat;
     }
 
     @media ($desktop-width) {
       width: 148px;
       height: 42px;
+      background: url(../../img/logo-pink-blue-mobile.svg) no-repeat;
     }
   }
 }
