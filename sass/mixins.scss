@@ -7,7 +7,6 @@
 }
 
 @mixin container {
-  outline: 2px dashed yellowgreen;
   width: 280px;
   margin: 0 auto;
 
@@ -17,6 +16,18 @@
 
   @media ($desktop-width) {
       width: 940px;
+  }
+}
+
+@mixin container-fluid {
+  width: 90%;
+  min-width: 280px;
+  margin: 0 auto;
+
+  @media ($tablet-width) {
+    width: 84%;
+    max-width: 940px;
+    margin: 0 auto;
   }
 }
 

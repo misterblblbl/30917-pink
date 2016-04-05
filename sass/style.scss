@@ -1,13 +1,19 @@
 @import 'variables';
 @import 'mixins';
 
+@import 'blocks/page-body';
 @import 'blocks/page-header';
 @import 'blocks/main-nav';
 @import 'blocks/page-content';
 @import 'blocks/page-footer';
 @import 'blocks/intro';
 @import 'blocks/download-info';
+@import 'blocks/information';
+
+@import 'blocks/slogan';
 @import 'blocks/features';
+@import 'blocks/effect';
+
 @import 'blocks/reviews';
 @import 'blocks/pricing';
 @import 'blocks/pricing-table';
@@ -22,8 +28,8 @@
 @import 'blocks/btn';
 
 @font-face {
-  font-weight: 300;
-  font-family: 'Open Sans';
+  font-weight: normal;
+  font-family: 'Open Sans Light';
   font-style: normal;
 
   src: url('../fonts/opensanslight.woff') format('woff'),
@@ -41,7 +47,7 @@
 
 @font-face {
   font-weight: 700;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans Bold';
   font-style: normal;
 
   src: url('../fonts/opensansbold.woff') format('woff'),

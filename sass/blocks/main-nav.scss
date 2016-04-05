@@ -1,23 +1,27 @@
 .main-nav {
-  outline: 2px dotted red;
-  float: right;
+
+  @media ($desktop-width) {
+    padding-top: 15px;
+  }
 
   &__items {
     @include no-list;
 
-    @media ($desktop-width) {
-      padding-top: 20px;
-    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
   }
 
   &__item {
     display: none;
 
     @media ($desktop-width) {
-      outline: 1px solid red;
-      display: inline-block;
+      display: block;
       vertical-align: bottom;
       margin-right: 80px;
+      font-family: 'Open Sans','Arial', sans-serif;
+      font-weight: normal;
       font-size: 18px;
       line-height: 32px;
 

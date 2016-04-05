@@ -1,5 +1,4 @@
 .download-info {
-  outline: 1px dashed red;
   color: #FFFFFF;
 
   @media ($tablet-width) {
@@ -14,30 +13,71 @@
     display: block;
     margin-top: 25px;
     margin-bottom: 30px;
-    padding: 18px 36px;
-    color: #FFFFFF;
-    text-decoration: none;
+    padding: 18px 33px;
+
+    font-family: 'Open Sans Bold','Arial', sans-serif;
+    font-weight: normal;
     font-size: 18px;
     line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
     text-align: center;
     border: 3px solid #FFFFFF;
     border-radius: 50px;
+
+    @media ($tablet-width) {
+      margin-bottom: 60px;
+    }
+
+    @media ($desktop-width) {
+      font-size: 21px;
+      padding: 18px 20px;
+    }
   }
 
   &__links {
     @include no-list;
+    display: block;
+    margin: 0 auto;
+    font-size: 0;
+    width: 230px;
+    margin-bottom: 30px;
+
+    @media ($tablet-width) {
+      margin-bottom: 40px;
+    }
+
+    @media ($desktop-width) {
+      margin-bottom: 55px;
+    }
   }
+
   &__icons {
     display: inline-block;
+    margin-right: 32px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__link {
     display: inline-block;
-    margin-right: 30px;
     width: 55px;
     height: 55px;
     font-size: 0;
-    outline: 1px solid yellow;
+
+    &--apple {
+      background: url(../../img/logo-apple.svg) no-repeat 50% 50%;
+    }
+
+    &--android {
+      background: url(../../img/logo-android.svg) no-repeat 50% 50%;
+    }
+
+    &--windows {
+      background: url(../../img/logo-microsoft.svg) no-repeat 50% 50%;
+    }
   }
 
   &__heading {
@@ -46,7 +86,12 @@
 
     @media ($tablet-width) {
       display: block;
-      padding-top: 105px;
+      margin: 0 40px;
+      margin-top: 105px;
+      margin-bottom: 30px;
+
+      font-family: 'Open Sans Light','Arial', sans-serif;
+      font-weight: normal;
       font-size: 40px;
       line-height: 48px;
       text-align: center;
@@ -54,11 +99,25 @@
 
     @media ($desktop-width) {
       display: block;
-      padding-top: 125px;
+      margin-top: 125px;
+      margin-bottom: 60px;
       font-size: 50px;
       line-height: 60px;
       text-align: center;
     }
+  }
 
+  &__description {
+    margin: 0;
+
+    font-family: 'Open Sans Light','Arial', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+
+    @media ($tablet-width) {
+      font-size: 18px;
+    }
   }
 }

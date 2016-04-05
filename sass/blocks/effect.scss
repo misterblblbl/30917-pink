@@ -1,0 +1,53 @@
+.effect {
+  display: none;
+
+  @media ($tablet-width) {
+    display: block;
+    padding-top: 80px;
+    padding-bottom: 70px;
+
+    background-color: #FFFFFF;
+  }
+
+  @media ($desktop-width) {
+    padding-top: 128px;
+    padding-bottom: 118px;
+
+    background-color: $light-grey;
+  }
+
+  &__wrapper {
+    @include container-fluid;
+  }
+
+  &__content {
+    padding-left: 310px;
+
+    @media ($desktop-width) {
+      padding-left: 370px;
+    }
+  }
+
+  &__heading {
+    font-family: 'Open Sans Bold','Arial', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  &__description {
+    font-family: 'Open Sans','Arial', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    @media ($desktop-width) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  &__link {
+    color: $pink;
+  }
+}

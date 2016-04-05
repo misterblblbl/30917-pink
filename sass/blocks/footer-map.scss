@@ -1,3 +1,12 @@
 .footer-map {
-  outline: 1px dashed red;
+  min-height: 200px;
+  background-image: url(../../img/bg-map.png);
+
+  @media ($tablet-width) {
+    min-height: 378px;
+  }
+
+  @media ($desktop-width) {
+    min-height: 503px;
+  }
 }
