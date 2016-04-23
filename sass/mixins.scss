@@ -20,11 +20,12 @@
 }
 
 @mixin container-fluid {
-  width: 90%;
-  min-width: 280px;
+  width: auto;
+  min-width: 300px;
   margin: 0 auto;
 
   @media ($tablet-width) {
+    padding: 0;
     width: 84%;
     max-width: 940px;
     margin: 0 auto;

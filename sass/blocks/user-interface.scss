@@ -1,8 +1,8 @@
 .user-interface {
-  outline: 1px dashed red;
   @include clearfix;
   min-height: 760px;
   padding-top: 20px;
+  background-color: $light-grey;
 
   @media ($tablet-width) {
     min-height: 510px;
@@ -12,8 +12,17 @@
     min-height: 510px;
   }
 
+  &__wrapper {
+    @include container-fluid;
+  }
+
   &__image {
     display: block;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    font-size: 0;
+    line-height: 0;
 
     @media ($tablet-width) {
       float: left;
@@ -23,9 +32,17 @@
       float: left;
     }
   }
-
+  &__tools-icons {
+    outline: 1px dashed red;
+    display: block;
+    width: 215px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    font-size: 0;
+  }
   &__tools {
     display: block;
+
 
     @media ($tablet-width) {
       float: right;
@@ -38,22 +55,67 @@
 
   &__icon {
     display: inline-block;
+    vertical-align: middle;
     width: 45px;
     height: 45px;
-    margin-right: 30px;
-    outline: 2px solid hotpink;
+    margin-right: 40px;
     font-size: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--crop {
+      width: 46px;
+      height: 44px;
+      background-image: url(../../img/icon-editor-crop.svg);
+    }
+    &--fill {
+      width: 48px;
+      height: 44px;
+      background-image: url(../../img/icon-editor-fill.svg);
+    }
+    &--contrast {
+      width: 32px;
+      height: 33px;
+      background-image: url(../../img/icon-editor-contrast.svg);
+    }
   }
 
   &__input {
-   display: block;
+    display: none;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    &--selected {
+      display: block;
+      width: 280px;
+    }
   }
 
   &__btn {
     display: block;
-    width: 100%;
+    width: 280px;
+    box-sizing: border-box;
     padding: 20px 70px;
+    margin: 0 auto;
     margin-bottom: 15px;
-    outline: 2px solid hotpink;
+
+    border: 2px solid $pink;
+    border-radius: 30px;
+    background-color: transparent;
+
+    font-family: 'Open Sans Bold','Arial', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: $pink;
+
+    &--disabled {
+      color: $middle-grey;
+      border-color: $middle-grey;
+    }
   }
 }

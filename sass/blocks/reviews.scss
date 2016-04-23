@@ -33,6 +33,10 @@
   &__inner {
     overflow: hidden;
     width: auto;
+
+    @media ($mobile-width-only) {
+      padding-bottom: 50px;
+    }
   }
 
   &__items {

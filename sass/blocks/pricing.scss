@@ -5,7 +5,8 @@
   background-color: $light-grey;
 
   &__wrapper {
-    @include container;
+    @include container-fluid;
+    overflow: hidden;
 
     @media ($tablet-width) {
       @include container-fluid;

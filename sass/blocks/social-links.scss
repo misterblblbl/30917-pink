@@ -1,15 +1,11 @@
 .social-links {
   @include no-list;
-  margin: 0 auto;
   width: 175px;
   font-size: 0;
 
-  @media ($tablet-width) {
-    float: left;
-  }
-
-  @media ($desktop-width) {
-    float: left;
+  @media ($mobile-width-only) {
+    margin: 0 auto;
+    margin-bottom: 35px;
   }
 
   &__item {

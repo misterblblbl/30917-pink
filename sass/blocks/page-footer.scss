@@ -2,11 +2,11 @@
   padding-top: 37px;
 
   @media ($tablet-width) {
-    padding-top: 35px;
+    padding-top: 0;
   }
 
   @media ($desktop-width) {
-    padding-top: 65px;
+    padding-top: 0;
   }
 
   &__wrapper {
@@ -18,9 +18,10 @@
 
     &-wrapper {
       @include container-fluid;
-      display: flex;
-      justify-content: space-between;
-
+      @media ($tablet-width) {
+        display: flex;
+        justify-content: space-between;
+      }
     }
 
     &--main {
@@ -34,14 +35,19 @@
 
     @media ($desktop-width) {
       display: block;
-      padding: 65px 0;
+      padding: 55px 0;
     }
   }
 
   &__logo {
-    margin: 0 auto;
+    width: 149px;
     text-align: center;
     background-color: #0000AA;
+
+    @media ($mobile-width-only) {
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
 
     @media ($tablet-width) {
       flex-basis: 145px;
@@ -53,8 +59,12 @@
   }
 
   &__copyright {
-    margin: 0 auto;
     text-align: center;
+
+    @media ($mobile-width-only) {
+      margin: 0 auto;
+      margin-bottom: 45px;
+    }
 
     @media ($tablet-width) {
       flex-basis: 135px;

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pink</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="page-body">
@@ -13,188 +13,215 @@
       <h1 class="page-header__logo">Pink</h1>
 
       <nav class="main-nav">
-        <span class="main-nav__toggle">Открыть меню</span>
+        <span class="main-nav__toggle main-nav__toggle--opened">Открыть меню</span>
 
-        <ul class="main-nav__items">
-          <li class="main-nav__item">
-            <a href="index.html" class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="http://htmlacademy.ru" class="main-nav__link">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper main-nav__wrapper--opened">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="http://htmlacademy.ru" class="main-nav__link">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
 
   <main class="page-content">
-    <div class="page-content__wrapper">
       <section class="intro" id="intro">
         <h2 class="intro__heading">Фотографии пользователей</h2>
       </section>
 
       <section class="users-gallery">
-        <p class="users-gallery__description">
+        <div class="users-gallery__description">
+          <div class="users-gallery__wrapper">
           Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите, как не&nbsp;хватает ваших?
-        </p>
+          </div>
+        </div>
 
-        <div class="users-gallery__container">
-          <article class="photos-item photos-item--panorama">
-            <div class="photos-item__photo photos-item__photo--panorama">
-              <img class="photos-item__image" src="http://placehold.it/320x137" alt="панорама" width="320" height="137">
-            </div>
-            <ul class="photos-item__description">
+
+        <article class="photos-item__panorama">
+          <div class="photos-item__photo photos-item__photo--panorama">
+            <img class="photos-item__image" src="img/panorama-mobile.jpg" alt="панорама">
+          </div>
+
+          <div class="users-gallery__panorama-wrapper">
+            <ul class="photos-item__description photos-item__description--panorama">
               <li class="photos-item__author">Анна</li>
               <li class="photos-item__time">5 минут назад</li>
               <li class="photos-item__comment">
-                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </li>
-              <li class="photos-item__likes">Нравится: 215</li>
+              <li class="photos-item__likes photos-item__likes--panorama">Нравится: 215</li>
             </ul>
-          </article>
+          </div>
+        </article>
 
-          <article class="photos-item">
-            <div class="photos-item__photo">
-              <img src="http://placehold.it/280x180" alt="панорама" width="280" height="180">
+        <div class="users-gallery__container">
+          <div class="users-gallery__wrapper">
+            <article class="photos-item">
+              <div class="photos-item__photo">
+                <img src="img/photo-1-mobile.jpg" alt="фото пользователя">
+              </div>
+              <ul class="photos-item__description">
+                <li class="photos-item__author">Левон</li>
+                <li class="photos-item__time">5 часов назад</li>
+                <li class="photos-item__comment">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </li>
+                <li class="photos-item__likes">Нравится: 356</li>
+              </ul>
+            </article>
+
+            <article class="photos-item">
+              <div class="photos-item__photo">
+                <img src="img/photo-2-mobile.jpg" alt="фото пользователя">
+              </div>
+              <ul class="photos-item__description">
+                <li class="photos-item__author">Антон</li>
+                <li class="photos-item__time">12 часов назад</li>
+                <li class="photos-item__comment">
+                  Соседи будут рады!
+                </li>
+                <li class="photos-item__likes">Нравится: 666</li>
+              </ul>
+            </article>
+
+            <article class="photos-item">
+              <div class="photos-item__photo">
+                <img src="img/photo-3-mobile.jpg" alt="фото пользователя">
+              </div>
+              <ul class="photos-item__description">
+                <li class="photos-item__author">Борис</li>
+                <li class="photos-item__time">20 часов назад</li>
+                <li class="photos-item__comment">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </li>
+                <li class="photos-item__likes">Нравится: 215</li>
+              </ul>
+            </article>
+
+            <article class="photos-item">
+              <div class="photos-item__photo">
+                <img src="img/photo-4-mobile.jpg" alt="фото пользователя">
+              </div>
+              <ul class="photos-item__description">
+                <li class="photos-item__author">Сергей</li>
+                <li class="photos-item__time">25 часов назад</li>
+                <li class="photos-item__comment">
+                  Самая кубанская в мире!
+                </li>
+                <li class="photos-item__likes">Нравится: 4</li>
+              </ul>
+            </article>
+
+            <article class="photos-item">
+              <div class="photos-item__photo">
+                <img src="img/photo-5-mobile.jpg" alt="фото пользователя">
+              </div>
+              <ul class="photos-item__description">
+                <li class="photos-item__author">Максим</li>
+                <li class="photos-item__time">40 часов назад</li>
+                <li class="photos-item__comment">
+                  Где снег-то?
+                </li>
+                <li class="photos-item__likes">Нравится: 150</li>
+              </ul>
+            </article>
+
+            <article class="photos-item">
+              <div class="photos-item__photo">
+                <img src="img/photo-6-mobile.jpg" alt="фото пользователя">
+              </div>
+              <ul class="photos-item__description">
+                <li class="photos-item__author">Надежда</li>
+                <li class="photos-item__time">45 часов назад</li>
+                <li class="photos-item__comment">
+                  Всем GM и взаимные лайки!
+                </li>
+                <li class="photos-item__likes">Нравится: 2560</li>
+              </ul>
+            </article>
+
+            <div class="users-gallery__promo">
+              Затмите их всех!<br>
+              Выкладывайте все, что накопилось в телефоне!
             </div>
-            <ul class="photos-item__description">
-              <li class="photos-item__author">Левон</li>
-              <li class="photos-item__time">5 часов назад</li>
-              <li class="photos-item__comment">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </li>
-              <li class="photos-item__likes">Нравится: 356</li>
-            </ul>
-          </article>
-
-          <article class="photos-item">
-            <div class="photos-item__photo">
-              <img src="http://placehold.it/280x180" alt="панорама" width="280" height="180">
-            </div>
-            <ul class="photos-item__description">
-              <li class="photos-item__author">Антон</li>
-              <li class="photos-item__time">12 часов назад</li>
-              <li class="photos-item__comment">
-                Соседи будут рады!
-              </li>
-              <li class="photos-item__likes">Нравится: 666</li>
-            </ul>
-          </article>
-
-          <article class="photos-item">
-            <div class="photos-item__photo">
-              <img src="http://placehold.it/280x180" alt="панорама" width="280" height="180">
-            </div>
-            <ul class="photos-item__description">
-              <li class="photos-item__author">Борис</li>
-              <li class="photos-item__time">20 часов назад</li>
-              <li class="photos-item__comment">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </li>
-              <li class="photos-item__likes">Нравится: 215</li>
-            </ul>
-          </article>
-
-          <article class="photos-item">
-            <div class="photos-item__photo">
-              <img src="http://placehold.it/280x180" alt="панорама" width="280" height="180">
-            </div>
-            <ul class="photos-item__description">
-              <li class="photos-item__author">Сергей</li>
-              <li class="photos-item__time">25 часов назад</li>
-              <li class="photos-item__comment">
-                Самая кубанская в мире!
-              </li>
-              <li class="photos-item__likes">Нравится: 4</li>
-            </ul>
-          </article>
-
-          <article class="photos-item">
-            <div class="photos-item__photo">
-              <img src="http://placehold.it/280x180" alt="панорама" width="280" height="180">
-            </div>
-            <ul class="photos-item__description">
-              <li class="photos-item__author">Максим</li>
-              <li class="photos-item__time">40 часов назад</li>
-              <li class="photos-item__comment">
-                Где снег-то?
-              </li>
-              <li class="photos-item__likes">Нравится: 150</li>
-            </ul>
-          </article>
-
-          <article class="photos-item">
-            <div class="photos-item__photo">
-              <img src="http://placehold.it/280x180" alt="панорама" width="280" height="180">
-            </div>
-            <ul class="photos-item__description">
-              <li class="photos-item__author">Надежда</li>
-              <li class="photos-item__time">45 часов назад</li>
-              <li class="photos-item__comment">
-                Всем GM и взаимные лайки!
-              </li>
-              <li class="photos-item__likes">Нравится: 2560</li>
-            </ul>
-          </article>
-
+          </div>
         </div>
       </section>
 
       <section class="user-interface">
-        <div class="user-interface__promo">Затмите их всех!<br>
-          Выкладывайте все, что накопилось в телефоне!
-        </div>
+        <div class="user-interface__wrapper">
 
-        <div class="user-interface__image">
-          <img src="http://placehold.it/280x375" alt="" width="280" height="375">
-        </div>
+          <div class="user-interface__image">
+            <img src="img/photo-7-mobile.jpg" alt="пример фото">
+          </div>
 
-        <form class="user-interface__tools" action="https://echo.htmlacademy.ru" method="get">
-          <label class="user-interface__icon user-interface__tool--crop" for="crop-input">Кадрирование</label>
-          <label class="user-interface__icon user-interface__tool--fill" for="fill-input">Заливка</label>
-          <label class="user-interface__icon user-interface__tool--contrast" for="contrast-input">Контраст</label>
+          <form class="user-interface__tools" action="https://echo.htmlacademy.ru" method="get">
 
-          <input class="user-interface__input" type="range" name="crop" id="crop-input">
-          <input class="user-interface__input" type="range" name="fill" id="fill-input">
-          <input class="user-interface__input" type="range" name="contrast" id="contrast-input">
+            <input type="radio" id="setting-1" name="controls" checked>
+            <input type="radio" id="setting-2" name="controls">
+            <input type="radio" id="setting-3" name="controls">
 
-          <input type="submit" class="user-interface__btn user-interface__btn-active" value="Запостить">
-          <input type="reset" class="user-interface__btn user-interface__btn--disabled" value="Отмена">
+            <div class="user-interface__tools-icons">
+              <label class="user-interface__icon user-interface__icon--crop" for="setting-1">
+                Кадрирование
+              </label>
+              <label class="user-interface__icon user-interface__icon--fill" for="setting-2">
+                Заливка
+              </label>
+              <label class="user-interface__icon user-interface__icon--contrast" for="setting-3">
+                Контраст
+              </label>
+            </div>
+
+            <input class="user-interface__input user-interface__input--selected" type="range" name="crop" id="crop-input">
+            <input class="user-interface__input" type="range" name="fill" id="fill-input">
+            <input class="user-interface__input" type="range" name="contrast" id="contrast-input">
+
+            <input type="submit" class="user-interface__btn user-interface__btn-active" value="Запостить">
+            <input type="reset" class="user-interface__btn user-interface__btn--disabled" value="Отмена">
         </form>
+        </div>
       </section>
-    </div>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__logo">
-        <img src="http://placehold.it/150x40" alt="Pink" width="150" height="40">
+    <div class="page-footer__links">
+      <div class="page-footer__links-wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Pink" width="150" height="40">
+        </div>
+
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a href="#" class="social-links__link social-links__link--tw">Twiter</a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link social-links__link--fb">Facebook</a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link social-links__link--yt">Youtube</a>
+          </li>
+        </ul>
+
+        <div class="page-footer__copyright">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-link" href="http://htmlacademy.ru">HTML Academy</a>
+        </div>
       </div>
 
-      <ul class="social-links">
-        <li class="social-links__item">
-          <a href="#" class="social-links__link social-links__link--tw">Twiter</a>
-        </li>
-        <li class="social-links__item">
-          <a href="#" class="social-links__link social-links__link--fb">Facebook</a>
-        </li>
-        <li class="social-links__item">
-          <a href="#" class="social-links__link social-links__link--yt">Youtube</a>
-        </li>
-      </ul>
-
-      <div class="page-footer__copyright">
-        <span>Разработано</span>
-        <a class="page-footer__copyright-link" href="http://htmlacademy.ru">HTML Academy</a>
-      </div>
     </div>
   </footer>
-
+  <script src="js/main.js"></script>
 </body>
 </html>
