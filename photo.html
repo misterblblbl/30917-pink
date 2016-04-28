@@ -199,7 +199,11 @@
     <div class="page-footer__links">
       <div class="page-footer__links-wrapper">
         <div class="page-footer__logo">
-          <img src="img/logo-pink-blue-mobile.svg" alt="Pink" width="150" height="40">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-pink-blue-tablet.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Pink" width="150" height="40">
+          </picture>
         </div>
 
         <ul class="social-links">
