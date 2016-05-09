@@ -1,35 +1,43 @@
 .user-interface {
-  @include clearfix;
-  min-height: 760px;
-  padding-top: 20px;
   background-color: $light-grey;
 
-  @media ($tablet-width) {
-    min-height: 510px;
-  }
-
   @media ($desktop-width) {
-    min-height: 510px;
+    background-color: white;
   }
 
   &__wrapper {
     @include container-fluid;
+    @include clearfix;
+
+    @media ($desktop-width) {
+      box-sizing: border-box;
+      padding-left: 80px;
+      padding-right: 60px;
+      padding-top: 55px;
+      padding-bottom: 50px;
+      background-color: $light-grey;
+    }
   }
 
   &__image {
     display: block;
     width: 280px;
     margin: 0 auto;
-    margin-bottom: 38px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     font-size: 0;
     line-height: 0;
 
     @media ($tablet-width) {
       float: left;
+      padding-top: 55px;
+      padding-bottom: 50px;
     }
 
     @media ($desktop-width) {
       float: left;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
   &__tools-icons {

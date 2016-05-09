@@ -25,6 +25,36 @@
 
     @media ($desktop-width) {
       padding-left: 370px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 301px;
+        height: 345px;
+        left: 0;
+        top: -100px;
+
+        background-image: url(../../img/icon-timer.svg);
+        background-repeat: no-repeat;
+      }
+      &::after {
+        content: '24';
+        position: absolute;
+        width: 221px;
+        height: 221px;
+        left: 19px;
+        top: -34px;
+
+        border-radius: 50%;
+        border: 19px solid $pink;
+
+        font-family: 'Open Sans Bold', 'Arial', sans-serif;
+        font-size: 120px;
+        color: $pink;
+        line-height: 200px;
+        text-align: center;
+      }
     }
   }
 
