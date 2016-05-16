@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pink</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="page-body">
@@ -254,33 +255,25 @@
 
           <form class="user-interface__tools" action="https://echo.htmlacademy.ru" method="get">
 
-            <input class="user-interface__radio" type="radio" id="tools-toggle-1" name="controls" checked>
-            <input class="user-interface__radio" type="radio" id="tools-toggle-2" name="controls">
-            <input class="user-interface__radio" type="radio" id="tools-toggle-3" name="controls">
+            <input type="radio" id="setting-1" name="controls" checked>
+            <input type="radio" id="setting-2" name="controls">
+            <input type="radio" id="setting-3" name="controls">
 
             <div class="user-interface__tools-icons">
-              <label class="user-interface__icon user-interface__icon--crop" for="tools-toggle-1">
+              <label class="user-interface__icon user-interface__icon--crop" for="setting-1">
                 Кадрирование
               </label>
-              <label class="user-interface__icon user-interface__icon--fill" for="tools-toggle-2">
+              <label class="user-interface__icon user-interface__icon--fill" for="setting-2">
                 Заливка
               </label>
-              <label class="user-interface__icon user-interface__icon--contrast" for="tools-toggle-3">
+              <label class="user-interface__icon user-interface__icon--contrast" for="setting-3">
                 Контраст
               </label>
             </div>
 
-            <div class="user-interface__range-inner">
-              <input class="user-interface__range" type="range" name="crop" id="crop-range">
-              <label for="crop-range"></label>
-
-              <input class="user-interface__range" type="range" name="fill" id="fill-range">
-              <label for="fill-range"></label>
-
-              <input class="user-interface__range" type="range" name="contrast" id="contrast-range">
-              <label for="contrast-range"></label>
-            </div>
-
+            <input class="user-interface__input user-interface__input--selected" type="range" name="crop" id="crop-input">
+            <input class="user-interface__input" type="range" name="fill" id="fill-input">
+            <input class="user-interface__input" type="range" name="contrast" id="contrast-input">
 
             <input type="submit" class="user-interface__btn user-interface__btn-active" value="Запостить">
             <input type="reset" class="user-interface__btn user-interface__btn--disabled" value="Отмена">

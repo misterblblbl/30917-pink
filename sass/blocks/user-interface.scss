@@ -41,19 +41,28 @@
     }
   }
   &__tools-icons {
-    outline: 1px dashed red;
     display: block;
-    width: 215px;
+    width: 220px;
     margin: 0 auto;
-    margin-bottom: 38px;
+    margin-bottom: 34px;
     font-size: 0;
+
+    @media ($tablet-width) {
+      position: absolute;
+      margin: 0;
+      height: 215px;
+      width: 44px;
+    }
   }
+
   &__tools {
+    position: relative;
     display: block;
 
 
     @media ($tablet-width) {
       float: right;
+      padding-top: 55px;
     }
 
     @media ($desktop-width) {
@@ -61,11 +70,21 @@
     }
   }
 
+  &__tools::after {
+    @media ($mobile-width-only) {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      top: 152px;
+      left: 0;
+      width: 900px;
+      border-bottom: 1px solid $middle-grey;
+    }
+  }
+
   &__icon {
     display: inline-block;
     vertical-align: middle;
-    width: 45px;
-    height: 45px;
     margin-right: 40px;
     font-size: 0;
 
@@ -74,32 +93,125 @@
     }
 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+
 
     &--crop {
       width: 46px;
       height: 44px;
       background-image: url(../../img/icon-editor-crop.svg);
+
+      @media ($tablet-width) {
+        width: 30px;
+        height: 72px;
+        margin-right: 0;
+        background-size: 30px;
+        background-position: center center;
+      }
+
+      @media ($desktop-width) {
+        width: 32px;
+        height: 74px;
+        background-size: 40px;
+        background-position: center center;
+      }
     }
     &--fill {
       width: 48px;
-      height: 44px;
+      height: 48px;
       background-image: url(../../img/icon-editor-fill.svg);
+
+      @media ($tablet-width) {
+        width: 30px;
+        height: 72px;
+        margin-right: 0;
+        background-size: 30px;
+      }
+
+      @media ($desktop-width) {
+        width: 32px;
+        height: 74px;
+        background-size: 40px;
+        background-position: center center;
+      }
     }
     &--contrast {
-      width: 32px;
-      height: 33px;
+      width: 46px;
+      height: 44px;
       background-image: url(../../img/icon-editor-contrast.svg);
+      background-size: 38px;
+
+      @media ($tablet-width) {
+        width: 30px;
+        height: 70px;
+        background-size: 22px;
+      }
+
+      @media ($desktop-width) {
+        width: 30px;
+        height: 74px;
+        background-size: 28px;
+        background-position: center center;
+      }
     }
   }
 
-  &__input {
+  &__radio {
     display: none;
+  }
+
+  &__range-inner {
+    display: block;
+    overflow: hidden;
+    width: 240px;
+    height: 70px;
     margin: 0 auto;
-    margin-bottom: 35px;
-    &--selected {
-      display: block;
-      width: 280px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 40px;
+
+    @media ($tablet-width) {
+      width: 290px;
+      height: 213px;
+    }
+
+    @media ($desktop-width) {
+      width: 410px;
+      height: 225px;
+    }
+  }
+
+  &__range {
+    width: 240px;
+    height: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    @media ($tablet-width) {
+      position: relative;
+      width: 202px;
+      margin-left: 80px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    @media ($desktop-width) {
+      width: 288px;
+      margin-left: 93px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__range::after {
+    @media ($tablet-width) {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      top: 42px;
+      left: -115px;
+      width: 900px;
+      border-bottom: 1px solid $middle-grey;
     }
   }
 
@@ -125,5 +237,31 @@
       color: $middle-grey;
       border-color: $middle-grey;
     }
+  }
+}
+
+
+
+#tools-toggle-1:checked ~ .user-interface__tools-icons label[for="tools-toggle-1"],
+#tools-toggle-2:checked ~ .user-interface__tools-icons label[for="tools-toggle-2"],
+#tools-toggle-3:checked ~ .user-interface__tools-icons label[for="tools-toggle-3"] {
+  /*outline: 1px solid $body-font;*/
+}
+
+#tools-toggle-1:checked ~ .user-interface__range-inner .user-interface__range {
+  @media ($mobile-width-only) {
+    transform: translateY(0);
+  }
+}
+
+#tools-toggle-2:checked ~ .user-interface__range-inner .user-interface__range {
+  @media ($mobile-width-only) {
+    transform: translateY(-70px);
+  }
+}
+
+#tools-toggle-3:checked ~ .user-interface__range-inner .user-interface__range {
+  @media ($mobile-width-only) {
+    transform: translateY(-140px);
   }
 }
