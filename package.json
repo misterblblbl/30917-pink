@@ -24,11 +24,14 @@
     "gulp-postcss": "^6.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "2.2.0",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0",
     "run-sequence": "^1.1.5"
   },
   "scripts": {
     "test": "editorconfig-tools check *",
     "build": "gulp build",
+    "symbols": "gulp symbols",
     "start": "npm run build && gulp serve"
   },
   "engines": {

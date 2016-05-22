@@ -12,6 +12,8 @@ var imagemin = require("gulp-imagemin");
 var server = require("browser-sync");
 var clean = require("gulp-clean");
 var runSequence = require('run-sequence');
+var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
 
 //Собрать стилевой файл, добавить префиксы,
 // скомбинировать медиа-вырадения, минифицировать файл
@@ -47,6 +49,17 @@ gulp.task("images", function() {
       progressive: true
     }))
     .pipe(gulp.dest("build/img"));
+});
+
+//Создать svg-спрайт из почищенных svg-файлов
+gulp.task('symbols', function() {
+  return gulp.src('img/icons/*.svg')
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('symbols.svg'))
+    .pipe(gulp.dest('img'))
 });
 
 //Минифицировать и скопировать js-файлы
