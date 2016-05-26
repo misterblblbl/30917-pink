@@ -5,28 +5,13 @@
     padding-top: 0;
   }
 
-  @media ($desktop-width) {
-    padding-top: 0;
-  }
-
   &__wrapper {
     @include container-fluid;
   }
+
   &__links {
     margin: 0 auto;
     text-align: center;
-
-    &-wrapper {
-      @include container-fluid;
-      @media ($tablet-width) {
-        display: flex;
-        justify-content: space-between;
-      }
-    }
-
-    &--main {
-      display: none;
-    }
 
     @media ($tablet-width) {
       display: block;
@@ -36,6 +21,20 @@
     @media ($desktop-width) {
       display: block;
       padding: 55px 0;
+    }
+  }
+
+  &__links-wrapper {
+    @include container-fluid;
+    @media ($tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__links--main {
+    @media ($mobile-width-only) {
+      display: none;
     }
   }
 

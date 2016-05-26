@@ -39,71 +39,71 @@
       flex-basis: 100%;
       margin-bottom: 55px;
     }
+  }
 
-    &--name {
-      padding-bottom: 40px;
+  &__field--name {
+    padding-bottom: 40px;
 
-      @media ($tablet-width) {
-        order: 1;
-        padding: 0;
-        border: 0;
-      }
-
-      @media ($desktop-width) {
-        flex-basis: 46%;
-        box-sizing: border-box;
-        margin-right: 70px;
-        padding-bottom: 0;
-      }
+    @media ($tablet-width) {
+      order: 1;
+      padding: 0;
+      border: 0;
     }
 
-    &--achievements {
-      padding-top: 35px;
-      padding-bottom: 45px;
-      @media ($mobile-width-only) {
-        background-color: $light-grey;
-      }
+    @media ($desktop-width) {
+      flex-basis: 46%;
+      box-sizing: border-box;
+      margin-right: 70px;
+      padding-bottom: 0;
+    }
+  }
 
-      @media ($tablet-width) {
-        order: 4;
-      }
+  &__field--achievements {
+    padding-top: 35px;
+    padding-bottom: 45px;
+    @media ($mobile-width-only) {
+      background-color: $light-grey;
     }
 
-    &--contacts {
-      padding-bottom: 50px;
+    @media ($tablet-width) {
+      order: 4;
+    }
+  }
 
-      @media ($tablet-width) {
-        order: 3;
-      }
+  &__field--contacts {
+    padding-bottom: 50px;
 
-      @media ($desktop-width) {
-        @include clearfix;
-      }
+    @media ($tablet-width) {
+      order: 3;
     }
 
-    &--app {
-      padding-bottom: 40px;
+    @media ($desktop-width) {
+      @include clearfix;
+    }
+  }
 
-      @media ($mobile-width-only) {
-        background-color: $light-grey;
-      }
+  &__field--app {
+    padding-bottom: 40px;
 
-      @media ($tablet-width) {
-        order: 2;
-      }
-
-      @media ($desktop-width) {
-        flex-basis: 46%;
-        box-sizing: border-box;
-      }
+    @media ($mobile-width-only) {
+      background-color: $light-grey;
     }
 
-    &--feedback {
-      padding-bottom: 45px;
+    @media ($tablet-width) {
+      order: 2;
+    }
 
-      @media ($tablet-width) {
-        order: 5;
-      }
+    @media ($desktop-width) {
+      flex-basis: 46%;
+      box-sizing: border-box;
+    }
+  }
+
+  &__field--feedback {
+    padding-bottom: 45px;
+
+    @media ($tablet-width) {
+      order: 5;
     }
   }
 
@@ -121,9 +121,6 @@
       flex-direction: column;
       justify-content: flex-end;
     }
-  }
-
-  &__element {
   }
 
   &__element--achievements {
@@ -276,6 +273,7 @@
     @media ($mobile-width-only) {
       @include container-fluid;
     }
+
     @media ($tablet-width) {
       @include clearfix;
       order: 6;

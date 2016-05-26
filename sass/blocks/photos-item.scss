@@ -56,17 +56,13 @@
     }
 
   }
+
   &__photo {
     width: 280px;
     height: 180px;
     margin: 0 auto;
 
     @media ($tablet-width) {
-      width: 100%;
-      height: auto;
-    }
-
-    & img {
       width: 100%;
       height: auto;
     }
@@ -79,10 +75,6 @@
 
     @media ($tablet-width) {
       display: block;
-    }
-
-    @media ($desktop-width) {
-
     }
   }
 
@@ -113,23 +105,23 @@
     line-height: 24px;
     text-transform: uppercase;
 
-    &::before {
-      position: absolute;
-      content: '(';
-      top: 0;
-      left: -5px;
-    }
-
-    &:after {
-      position: absolute;
-      content: ')';
-      top: 0;
-      right: -5px;
-    }
-
     @media ($tablet-width) {
       order: 1;
     }
+  }
+
+  &__time::before {
+    position: absolute;
+    content: '(';
+    top: 0;
+    left: -5px;
+  }
+
+  &__time::after {
+    position: absolute;
+    content: ')';
+    top: 0;
+    right: -5px;
   }
 
   &__comment {
@@ -155,36 +147,37 @@
     text-transform: uppercase;
     color: $pink;
 
-    &::before {
-      position: absolute;
-      content: '';
-      width: 14px;
-      height: 13px;
-      top: 5px;
-      left: -32px;
-
-      background-image: url(../../img/icon-heart.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-
-      @media ($tablet-width){
-        left: 95%;
-      }
-    }
-
     @media ($tablet-width) {
       order: 2;
       margin-left: auto;
       margin-top: 20px;
     }
+  }
 
-    &--panorama {
-      margin-top: 0;
-      &::before {
-        top: 5px;
-        left: -32px;
-      }
+  &__likes::before {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 13px;
+    top: 5px;
+    left: -32px;
+
+    background-image: url(../../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media ($tablet-width){
+      left: 95%;
     }
+  }
+
+  &__likes--panorama {
+    margin-top: 0;
+  }
+
+  &__likes--panorama::before {
+    top: 5px;
+    left: -32px;
   }
 
   &__description {
@@ -195,15 +188,15 @@
     @media ($tablet-width) {
       padding: 25px 30px;
     }
+  }
 
-    &--panorama {
-      @media ($tablet-width) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding-top: 25px;
-        padding-bottom: 25px;
-      }
+  &__description--panorama {
+    @media ($tablet-width) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: 25px;
+      padding-bottom: 25px;
     }
   }
 }

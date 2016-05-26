@@ -7,50 +7,51 @@
     width: auto;
   }
 
-  &__wrapper {
-    &--opened {
-      position: absolute;
-      top: -72px;
-      width: 100%;
-      z-index: 9;
+  &__wrapper--opened {
+    position: absolute;
+    top: -72px;
+    width: 100%;
+    z-index: 9;
 
-      padding-top: 78px;
-      background-color: #283645;
+    padding-top: 78px;
+    background-color: #283645;
 
-      @media ($tablet-width) {
-        top: -109px;
-        left: -10%;
-        padding-top: 108px;
-        width: 120%;
-      }
+    @media ($tablet-width) {
+      top: -109px;
+      left: -10%;
+      padding-top: 108px;
+      width: 120%;
     }
+  }
 
-    &--opened::before {
-      content: '';
-      position: absolute;
-      top: 25px;
-      left: 20px;
+  &__wrapper--opened::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 20px;
 
-      width: 76px;
-      height: 24px;
+    width: 76px;
+    height: 24px;
 
+    background: url(../../img/logo-pink-white-mobile.svg) no-repeat;
+
+    @media ($tablet-width) {
+      left: 10.5%;
+      width: 150px;
+      height: 42px;
       background: url(../../img/logo-pink-white-mobile.svg) no-repeat;
-
-      @media ($tablet-width) {
-        left: 10.5%;
-        width: 150px;
-        height: 42px;
-        background: url(../../img/logo-pink-white-mobile.svg) no-repeat;
-      }
-
-      @media ($desktop-width) {
-        content: none;
-      }
     }
 
-    &--closed {
-      display: none;
+    @media ($desktop-width) {
+      content: none;
     }
+  }
+
+  &__wrapper--closed {
+    display: none;
+  }
+
+  &__wrapper {
 
     @media ($desktop-width) {
       position: static;
@@ -130,6 +131,7 @@
   }
 
   &__link {
+    position: relative;
     text-decoration: none;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -137,5 +139,18 @@
     @media ($desktop-width) {
       text-transform: capitalize;
     }
+  }
+
+  &__link:active {
+    opacity: 0.3;
+  }
+
+  &__link:hover::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid white;
   }
 }

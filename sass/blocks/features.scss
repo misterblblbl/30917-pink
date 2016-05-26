@@ -35,33 +35,36 @@
     @media ($tablet-width) {
       padding-left: 310px;
       padding-top: 28px;
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 10;
-        width: 267px;
-        height: 485px;
-
-        background-image: url(../../img/iphone-screen-tablet-3@1x.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-
-        @media
-        (min-resolution: 144dpi),
-        (min-resolution: 1.5dppx) {
-          background-image: url(../../img/iphone-screen-tablet-3@2x.png);
-        }
-      }
     }
+
     @media ($desktop-width) {
-      &::before {
-        content: none;
-      }
       padding-left: 0;
       display: table;
+    }
+  }
+
+  &__items::before {
+    @media ($tablet-width) {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 10;
+      width: 267px;
+      height: 485px;
+
+      background-image: url(../../img/iphone-screen-tablet-3@1x.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url(../../img/iphone-screen-tablet-3@2x.png);
+      }
+    }
+
+    @media ($desktop-width) {
+      content: none;
     }
   }
 
@@ -81,73 +84,76 @@
       display: table-cell;
       padding: 0 30px;
       padding-top: 260px;
+    }
+  }
 
-      &::before {
-        content: "";
-        position: absolute;
-        left: 10px;
-        bottom: 320px;
-        width: 300px;
-        height: 300px;
-        z-index: 10;
+  &__item::before {
+    @media ($desktop-width) {
+      content: "";
+      position: absolute;
+      left: 10px;
+      bottom: 320px;
+      width: 300px;
+      height: 300px;
+      z-index: 10;
 
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 100%;
+    }
+  }
+
+  &__item:nth-child(1)::before {
+
+    @media ($desktop-width) {
+      background-image: url(../../img/iphone-screen-desktop-1@1x.png);
+      background-position: center bottom;
+      background-size: contain;
+
+      @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url(../../img/iphone-screen-desktop-1@2x.png);
       }
     }
-    &:nth-child(1) {
-      @media ($desktop-width) {
-        &::before {
-          background-image: url(../../img/iphone-screen-desktop-1@1x.png);
-          background-position: center bottom;
-          background-size: contain;
+  }
 
-          @media
-          (min-resolution: 144dpi),
-          (min-resolution: 1.5dppx) {
-            background-image: url(../../img/iphone-screen-desktop-1@2x.png);
-          }
-        }
+  &__item:nth-child(2)::before {
+    @media ($desktop-width) {
+      background-image: url(../../img/iphone-screen-desktop-2@1x.png);
+      background-position: center bottom;
+      background-size: contain;
+
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url(../../img/iphone-screen-desktop-2@2x.png);
       }
     }
-    &:nth-child(2) {
-      @media ($desktop-width) {
-        &::before {
-          background-image: url(../../img/iphone-screen-desktop-2@1x.png);
-          background-position: center bottom;
-          background-size: contain;
+  }
 
-          @media
-          (min-resolution: 144dpi),
-          (min-resolution: 1.5dppx) {
-            background-image: url(../../img/iphone-screen-desktop-2@2x.png);
-          }
-        }
-      }
+  &__item:nth-child(3) {
+    margin-bottom: 320px;
+
+    @media ($tablet-width) {
+      margin-bottom: 0;
+      padding-bottom: 45px;
     }
-    &:nth-child(3) {
-      margin-bottom: 320px;
 
-      @media ($tablet-width) {
-        margin-bottom: 0;
-        padding-bottom: 45px;
-      }
+    @media ($desktop-width) {
+      margin-bottom: 0;
+    }
+  }
 
-      @media ($desktop-width) {
-        margin-bottom: 0;
+  &__item:nth-child(3)::before {
+    @media ($desktop-width) {
+      background-image: url(../../img/iphone-screen-desktop-3@1x.png);
+      background-position: center bottom;
+      background-size: contain;
 
-        &::before {
-          background-image: url(../../img/iphone-screen-desktop-3@1x.png);
-          background-position: center bottom;
-          background-size: contain;
-
-          @media
-          (min-resolution: 144dpi),
-          (min-resolution: 1.5dppx) {
-            background-image: url(../../img/iphone-screen-desktop-3@2x.png);
-          }
-        }
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url(../../img/iphone-screen-desktop-3@2x.png);
       }
     }
   }

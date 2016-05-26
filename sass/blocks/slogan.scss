@@ -52,15 +52,15 @@
 
     @media ($tablet-width) {
       margin-bottom: 0;
-      &--second {
-        padding: 0 50px;
-      }
     }
+  }
 
+  &__line--second {
+    @media ($tablet-width) {
+      padding: 0 50px;
+    }
     @media ($desktop-width) {
-      &--second {
-        padding: 0 150px;
-      }
+      padding: 0 150px;
     }
   }
 }

@@ -42,6 +42,7 @@
     text-align: center;
   }
 }
+
 @media ($mobile-width-only) {
   #pricing-toggle-1:checked ~ .pricing__controls label[for="pricing-toggle-1"],
   #pricing-toggle-2:checked ~ .pricing__controls label[for="pricing-toggle-2"],
